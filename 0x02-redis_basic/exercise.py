@@ -23,8 +23,8 @@ class Cache:
         return key
 
     def get(self, key, fn=None):
-        """ 
-            method that gets items from 
+        """
+            method that gets items from
             redis
         """
         if fn is None:
