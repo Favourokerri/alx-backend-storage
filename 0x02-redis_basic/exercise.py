@@ -11,7 +11,7 @@ class Cache:
         self._redis = redis.Redis()
         self._redis.flushdb()
 
-    def store(self, data: str) -> str:
+    def store(self, data: Union[str, bytes, int, float]) -> str:
         """
             store method with agument data
             sets the value in our redis and
